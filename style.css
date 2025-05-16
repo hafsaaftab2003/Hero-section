@@ -1,0 +1,78 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  width: 100vw;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-heading {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-bottom: 150px;
+}
+
+/* Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 640px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card Styles */
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-number {
+  color: #888;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 50px;
+}
+
+.project-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  padding-bottom: 70px;
+  
+}
